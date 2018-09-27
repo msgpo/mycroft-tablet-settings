@@ -1,0 +1,5 @@
+mycroft-settings (0.0) UNRELEASED; urgency=medium
+
+  * Initial package, see git for changelog
+
+ -- Bhushan Shah <bshah@kde.org>  Tue, 08 Mar 2016 14:28:39 +0000
