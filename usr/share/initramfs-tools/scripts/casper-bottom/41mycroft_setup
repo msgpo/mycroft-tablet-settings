@@ -1,0 +1,36 @@
+#!/bin/sh
+
+PREREQ=""
+DESCRIPTION="Setting up mycroft"
+
+prereqs()
+{
+       echo "$PREREQ"
+}
+
+case $1 in
+# get pre-requisites
+prereqs)
+       prereqs
+       exit 0
+       ;;
+esac
+
+. /scripts/casper-functions
+
+log_begin_msg "$DESCRIPTION"
+
+# We override the setup created by 40kde_neon_setup to login to phablet user and use plasma-minishell
+if [ -f /root/usr/bin/sddm ]; then
+    cat << EOF > /root/etc/sddm.conf
+[Users]
+MinimumUid=999
+
+[Autologin]
+User=phablet
+Session=plasma-minishell.desktop
+Relogin=true
+EOF
+fi
+
+log_end_msg
