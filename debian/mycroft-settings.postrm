@@ -5,7 +5,7 @@ set -e
 PKG='mycroft-settings'
 
 if [ "$1" = remove ] || [ "$1" = deconfigure ]; then
-  dpkg-divert --remove --package $PKG --rename /etc/calamares/settings.conf
+  dpkg-divert --remove --package $PKG /etc/calamares/settings.conf
 fi
 
 #DEBHELPER#
