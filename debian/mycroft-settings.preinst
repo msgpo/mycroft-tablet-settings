@@ -4,15 +4,15 @@ set -e
 
 PKG='mycroft-settings'
 
-divert () {
+divert_rename () {
     source=$1
     target=$2
     if ! dpkg-divert --list $source | grep -q $PKG ; then
-        dpkg-divert --add --package $PKG --divert $target $source
+        dpkg-divert --add --package $PKG --rename --divert $target $source
     fi
 }
 
-divert '/etc/calamares/settings.conf' '/etc/calamares/settings.conf.real'
+divert_rename '/etc/calamares/settings.conf' '/etc/calamares/settings.conf.real'
 
 #DEBHELPER#
 

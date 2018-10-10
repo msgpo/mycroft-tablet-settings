@@ -9,7 +9,6 @@ Vcs-Git: https://github.com/mycroft-packaging/mycroft-settings
 
 Package: mycroft-settings
 Architecture: all
-Pre-Depends: calamares-settings
 Depends: ${misc:Depends}
 Description: Settings and artwork for Mycroft
  This package contains settings used by Mycroft. It also
