@@ -33,4 +33,7 @@ Relogin=true
 EOF
 fi
 
+file=/usr/share/applications/calamares.desktop
+sed -i 's/sudo calamares/pkexec calamares/' $file
+
 log_end_msg
