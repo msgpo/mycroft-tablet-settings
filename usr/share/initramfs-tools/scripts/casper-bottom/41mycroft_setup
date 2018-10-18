@@ -34,6 +34,6 @@ EOF
 fi
 
 file=/usr/share/applications/calamares.desktop
-sed -i 's/sudo calamares/pkexec calamares/' $file
+sed -i 's/sudo/pkexec/' $file
 
 log_end_msg
