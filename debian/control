@@ -1,13 +1,13 @@
-Source: mycroft-settings
+Source: mycroft-tablet-settings
 Section: kde
 Priority: optional
 Maintainer: Xenon <admin@blue-systems.com>
 Build-Depends: debhelper (>= 9), pkg-kde-tools (>= 0.9.2ubuntu14)
 Standards-Version: 3.9.7
-Vcs-Browser: https://github.com/mycroft-packaging/mycroft-settings
-Vcs-Git: https://github.com/mycroft-packaging/mycroft-settings
+Vcs-Browser: https://github.com/mycroft-packaging/mycroft-tablet-settings
+Vcs-Git: https://github.com/mycroft-packaging/mycroft-tablet-settings
 
-Package: mycroft-settings
+Package: mycroft-tablet-settings
 Architecture: all
 Depends: ${misc:Depends}
 Description: Settings and artwork for Mycroft

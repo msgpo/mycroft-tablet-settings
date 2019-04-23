@@ -1,6 +1,6 @@
 Format-Specification: http://svn.debian.org/wsvn/dep/web/deps/dep5.mdwn?op=file&rev=135
 Name: Mycroft Settings
-Source: https://github.com/mycroft-packaging/mycroft-settings
+Source: https://github.com/mycroft-packaging/mycroft-tablet-settings
 
 Files: *
 Copyright: 2018 Bhushan Shah <bshah@kde.org>
