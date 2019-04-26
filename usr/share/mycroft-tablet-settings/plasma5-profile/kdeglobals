@@ -1,0 +1,7 @@
+[KDE]
+LookAndFeelPackage=org.kde.mycroft.tablet
+
+[KScreen]
+ScaleFactor=2
+ScreenScaleFactors=eDP-1=2;HDMI-1=2;DP-1=2;HDMI-2=2;
+

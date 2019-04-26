@@ -1,3 +1,13 @@
 [Windows]
 Placement=Maximizing
 BorderlessMaximizedWindows=true
+
+[TouchEdges]
+Bottom=None
+Left=None
+Right=None
+Top=None
+
+[Plugins]
+kwin4_effect_eyeonscreenEnabled=true
+kwin4_effect_windowapertureEnabled=false
